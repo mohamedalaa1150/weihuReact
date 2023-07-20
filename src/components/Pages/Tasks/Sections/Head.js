@@ -38,11 +38,11 @@ export default function Head() {
           </span>
         </div>
         <ul className="flex">
-          <TeamItem img={team1} size="10" />
-          <TeamItem img={team2} size="10" />
-          <TeamItem img={team3} size="10" />
-          <TeamItem img={team4} size="10" />
-          <TeamItem img={team5} size="10" />
+          <TeamItem img={team1} />
+          <TeamItem img={team2} />
+          <TeamItem img={team3} />
+          <TeamItem img={team4} />
+          <TeamItem img={team5} />
         </ul>
       </div>
       <div className="flex gap-3">

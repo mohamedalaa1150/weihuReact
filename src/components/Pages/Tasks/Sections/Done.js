@@ -1,10 +1,13 @@
-import { RiMore2Line } from "react-icons/ri";
+import {
+  RiAttachment2,
+  RiMore2Line,
+  RiNotificationBadgeLine,
+} from "react-icons/ri";
 
 import { team1, team2, team3, team4, team5 } from "../components/Images";
 import HeadBody from "../components/HeadBody";
-import TeamItem from "../components/TeamItem";
+import { TeamItemSmall } from "../components/TeamItem";
 import { useState } from "react";
-import ButtonsCard from "../components/ButtonsCard";
 
 export default function Done() {
   const [isOpen, setIsOpen] = useState(true);
@@ -50,12 +53,25 @@ export default function Done() {
             </ul>
             <div className="mt-4 flex items-center justify-between">
               <ul className="flex ml-[15px]">
-                <TeamItem img={team1} size="7" />
-                <TeamItem img={team2} size="7" />
-                <TeamItem img={team3} size="7" />
-                <TeamItem img={team4} size="7" />
+                <TeamItemSmall img={team1} />
+                <TeamItemSmall img={team2} />
+                <TeamItemSmall img={team3} />
+                <TeamItemSmall img={team4} />
               </ul>
-              <ButtonsCard color="cyan" notiNum="7" attachNum="2" />
+              <div className="font-medium flex items-center justify-between gap-2">
+                <div className="flex items-center justify-between gap-1 py-[3px] px-[8px] rounded-lg border-[1px] border-cyan-700/25 cursor-pointer hover:bg-cyan-200 duration-300">
+                  <span>
+                    <RiNotificationBadgeLine />
+                  </span>
+                  <span>7</span>
+                </div>
+                <div className="flex items-center justify-between gap-1 py-[3px] px-[8px] rounded-lg border-[1px] border-cyan-700/25 cursor-pointer hover:bg-cyan-200 duration-300">
+                  <span>
+                    <RiAttachment2 />
+                  </span>
+                  <span>2</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -82,11 +98,24 @@ export default function Done() {
             </h3>
             <div className="mt-4 flex items-center justify-between">
               <ul className="flex ml-[15px]">
-                <TeamItem img={team4} size="7" />
-                <TeamItem img={team5} size="7" />
-                <TeamItem img={team2} size="7" />
+                <TeamItemSmall img={team4} />
+                <TeamItemSmall img={team5} />
+                <TeamItemSmall img={team2} />
               </ul>
-              <ButtonsCard color="rose" notiNum="12" attachNum="8" />
+              <div className="font-medium flex items-center justify-between gap-2">
+                <div className="flex items-center justify-between gap-1 py-[3px] px-[8px] rounded-lg border-[1px] border-rose-700/25 cursor-pointer hover:bg-rose-200 duration-300">
+                  <span>
+                    <RiNotificationBadgeLine />
+                  </span>
+                  <span>12</span>
+                </div>
+                <div className="flex items-center justify-between gap-1 py-[3px] px-[8px] rounded-lg border-[1px] border-rose-700/25 cursor-pointer hover:bg-rose-200 duration-300">
+                  <span>
+                    <RiAttachment2 />
+                  </span>
+                  <span>8</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
