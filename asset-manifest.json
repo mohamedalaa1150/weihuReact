@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/weihureact/static/css/main.685c1afd.css",
-    "main.js": "/weihureact/static/js/main.42c383c2.js",
+    "main.css": "/weihureact/static/css/main.8e0fa92c.css",
+    "main.js": "/weihureact/static/js/main.8ffe5684.js",
     "static/media/profile.jpg": "/weihureact/static/media/profile.46a2801bc595ebd98753.jpg",
     "static/media/page.png": "/weihureact/static/media/page.b9632bb7700599f6eb5b.png",
     "index.html": "/weihureact/index.html",
-    "main.685c1afd.css.map": "/weihureact/static/css/main.685c1afd.css.map",
-    "main.42c383c2.js.map": "/weihureact/static/js/main.42c383c2.js.map"
+    "main.8e0fa92c.css.map": "/weihureact/static/css/main.8e0fa92c.css.map",
+    "main.8ffe5684.js.map": "/weihureact/static/js/main.8ffe5684.js.map"
   },
   "entrypoints": [
-    "static/css/main.685c1afd.css",
-    "static/js/main.42c383c2.js"
+    "static/css/main.8e0fa92c.css",
+    "static/js/main.8ffe5684.js"
   ]
 }
