@@ -1,0 +1,71 @@
+.task-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.box-list-checked li {
+  position: relative;
+}
+
+.box-list-checked li::before {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  border: 1px solid;
+  border-radius: 50%;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.box-list-checked li.done::after {
+  position: absolute;
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Free';
+  content: '\f00c';
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  font-size: 10px;
+  left: -17px;
+  top: 3px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+/***** Track Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-runnable-track {
+  background: rgb(99 102 241 / 25%);
+  height: 10px;
+  border-radius: 10px;
+}
+
+/******** Firefox ********/
+input[type="range"]::-moz-range-track {
+  background: rgb(99 102 241 / 25%);
+  height: 10px;
+  border-radius: 10px;
+}
+
+/***** Thumb Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  /* Centers thumb on the track */
+  background-color: rgb(99 102 241);
+  margin-top: -3px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}

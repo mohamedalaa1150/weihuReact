@@ -1,0 +1,28 @@
+.line {
+  position: relative;
+  left: -20px;
+  top: 0;
+  width: calc(100% + 40px);
+  height: 2px;
+}
+
+.card-info:hover .arrow {
+  animation: moveRight 1s infinite alternate;
+  color: rgb(113, 115, 236);
+
+}
+
+.arrow {
+  transition: 0.3s;
+}
+
+
+@keyframes moveRight {
+  from {
+    transform: translateX(-3px);
+  }
+
+  to {
+    transform: translateX(3px);
+  }
+}
